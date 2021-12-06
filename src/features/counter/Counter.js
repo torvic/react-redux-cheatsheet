@@ -4,7 +4,8 @@ import {
   decrement,
   increment,
   incrementByAmount,
-  incrementAsync,
+  // incrementAsync,
+  incrementCustomAsync,
   incrementIfOdd,
   selectCount,
 } from './counterSlice';
@@ -51,7 +52,7 @@ export function Counter() {
         </button>
         <button
           className={styles.asyncButton}
-          onClick={() => dispatch(incrementAsync(incrementValue))}
+          onClick={() => dispatch(incrementCustomAsync(1))}
         >
           Add Async
         </button>
